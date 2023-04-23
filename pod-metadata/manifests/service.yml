@@ -6,9 +6,9 @@ metadata:
   name: pod-metadata-service
 spec:
   ports:
-  - port: 80 #change to 80
-    protocol: TCP
-    targetPort: 80 #change to 80
+    - port: 80 #change to 80
+      protocol: TCP
+      targetPort: 80 #change to 80
   selector:
     app: pod-metadata
-  type: NodePort
+  type: LoadBalancer
